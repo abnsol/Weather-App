@@ -3,11 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: './src/index.js',
+        app: './src/modules/display.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Production',
+            title: 'Weather App',
+            template: './src/page/template.html',
         }),
     ],
     module: {
@@ -32,13 +33,13 @@ module.exports = {
                 test: /\.(?:js|mjs|cjs)$/,
                 exclude: /node_modules/,
                 use: {
-                  loader: 'babel-loader',
-                  options: {
-                    presets: [
-                      ['@babel/preset-env', { targets: "defaults" }]
-                    ]
-                  }
-                }
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ['@babel/preset-env', { targets: 'defaults' }],
+                        ],
+                    },
+                },
             },
         ],
     },
