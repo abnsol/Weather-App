@@ -20,4 +20,4 @@ This weather app retrieves real-time weather data for a user-specified location 
 
 **Live Demo:**
 
-[Wizard](https://absnol.github.io/Weather-App)
+[Wizard](https://abnsol.github.io/Weather-App)
